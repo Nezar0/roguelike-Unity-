@@ -27,7 +27,7 @@ public class SpawnRooms : MonoBehaviour
     }
     public void Spawn()
     {
-        if (!spawned && RoomCount.Count <= 9)
+        if (!spawned && RoomCount.Count <= 10)
         {
             if (dir == Dir.Up)
             {
