@@ -27,7 +27,7 @@ public class SpawnRooms : MonoBehaviour
     }
     public void Spawn()
     {
-        if (!spawned && RoomCount.Count <= 10)
+        if (!spawned && RoomCount.Count < 10)
         {
             if (dir == Dir.Up)
             {
@@ -55,7 +55,7 @@ public class SpawnRooms : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.CompareTag("RoomPoint") && other.GetComponent<SpawnRooms>().spawned)
+        if (other.CompareTag("RoomPoint"))
         {
             Destroy(gameObject);
         }            

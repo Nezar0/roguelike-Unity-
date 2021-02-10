@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RoomCount : MonoBehaviour
+public struct RoomCount
 {
     private static byte roomCount = 1;
     public static byte Count
