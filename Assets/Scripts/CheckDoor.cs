@@ -9,7 +9,7 @@ public class CheckDoor : MonoBehaviour
 
     private void Start()
     {
-        Invoke("Check", 3f);
+        Invoke("Check", 1f);
     }
 
     private void Check()
