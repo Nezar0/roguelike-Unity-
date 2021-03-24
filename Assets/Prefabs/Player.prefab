@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4936917379922712191}
   - component: {fileID: 20131927875178443}
   - component: {fileID: 8672518289084912725}
+  - component: {fileID: 8306692270805979291}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094196136723556252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.854, y: 1.168, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 6.25, y: 6.25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -96,6 +97,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7f65e83e6c5bf84a9b6145fb66e3422, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  joystick: {fileID: 0}
+  controlType: 0
   moveSpead: 5
   rb: {fileID: 20131927875178443}
 --- !u!50 &20131927875178443
@@ -135,3 +138,22 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0048534772, y: -0.0024267577}
   m_Size: {x: 0.087891005, y: 0.123252176}
   m_Direction: 0
+--- !u!95 &8306692270805979291
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094196136723556252}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6c73980fe564e3746beb2dafb35e0ec3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
