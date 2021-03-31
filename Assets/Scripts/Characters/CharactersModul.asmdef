@@ -1,16 +1,13 @@
 {
-    "name": "PlayerModule",
+    "name": "CharactersModul",
     "references": [
-        "GUID:3f514c7e585eab5439f4cf434d6bfe43",
-        "GUID:4f70572381cd6df429d112ee4dee7ea0"
+        "GUID:3f514c7e585eab5439f4cf434d6bfe43"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
-    "overrideReferences": true,
-    "precompiledReferences": [
-        ""
-    ],
+    "overrideReferences": false,
+    "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
     "versionDefines": [],

@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     public Joystick joystick;
-    private float attackTime;
+    public float attackTime;
     public float startTimeAttack;
     public int damage = 5;
 
