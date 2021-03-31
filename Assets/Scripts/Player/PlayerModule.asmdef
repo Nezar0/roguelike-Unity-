@@ -1,7 +1,8 @@
 {
     "name": "PlayerModule",
     "references": [
-        "GUID:3f514c7e585eab5439f4cf434d6bfe43"
+        "GUID:3f514c7e585eab5439f4cf434d6bfe43",
+        "GUID:4f70572381cd6df429d112ee4dee7ea0"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

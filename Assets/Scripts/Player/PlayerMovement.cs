@@ -13,8 +13,6 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveDir;
     private Animator anim;
-    private bool facingLeft = false;
-
 
     private void Start()
     {
@@ -54,13 +52,13 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("isRunning", true);
         }
 
-        if (facingLeft && moveDir.x > 0)
+        if (moveDir.x > 0)
         {
-            Flip();
+            this.gameObject.transform.localScale = new Vector3(6.25f, 6.25f, 1);
         }
-        else if (!facingLeft && moveDir.x < 0) 
+        else if (moveDir.x < 0) 
         {
-            Flip();
+            this.gameObject.transform.localScale = new Vector3(-6.25f, 6.25f, 1);
         }
     }
 
@@ -69,9 +67,4 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(moveDir.x * moveSpead, moveDir.y * moveSpead);
     }
 
-    private void Flip()
-    {
-        facingLeft = !facingLeft;
-        GetComponent<SpriteRenderer>().flipX = facingLeft;
-    }
 }
