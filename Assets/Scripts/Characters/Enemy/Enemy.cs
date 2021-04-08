@@ -79,14 +79,14 @@ public class Enemy : MonoBehaviour
 
     public void OnAttack()
     {
-        player.GetComponent<PlayerHealth>().TakeDamage(20);
+        player.GetComponent<PlayerHealth>().TakeDamage(damage);
         attackTime = startTimeAttack;
         anim.SetBool("isAttacking", false);
     }
 
     public void TakeDamage(int damage)
     {
-        stopTime = startStopTime;
+        stopTime = startStopTime;   
         health -= damage; 
     }
 }

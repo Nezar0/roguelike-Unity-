@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6403604836839281666}
   - component: {fileID: 8070767529394278940}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trigger
   m_TagString: Door_down
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 8541178296549127234}
   - component: {fileID: 8541178296549127245}
   - component: {fileID: 8470780041116876241}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: door_down
   m_TagString: Door_down
   m_Icon: {fileID: 0}
@@ -115,8 +115,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: cb66a882492145541a7a1d003a1daeec, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: d1d2f3bf86a540b439e8bcd15165c6bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

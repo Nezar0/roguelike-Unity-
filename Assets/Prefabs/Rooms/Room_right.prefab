@@ -143,7 +143,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05784112c003e394e9c82f754355cc90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CountToLeave: 3
 --- !u!1 &6929824272868225809
 GameObject:
   m_ObjectHideFlags: 0
@@ -6865,6 +6864,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7592624353635610508}
   - component: {fileID: 4341324710750867078}
+  - component: {fileID: -5117188020890141572}
   m_Layer: 0
   m_Name: Room_right
   m_TagString: Untagged
@@ -6915,6 +6915,32 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f39a758a8ae177a4da502890cd0490af, type: 3}
   - {fileID: 21300000, guid: 7ffbcd2006fc2bd479e6bb3e26221050, type: 3}
   - {fileID: 21300000, guid: 603d84e82cc6e9d42988f14895b499ef, type: 3}
+--- !u!61 &-5117188020890141572
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7592624353635610511}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 16, y: 8}
+  m_EdgeRadius: 0
 --- !u!1 &7592624353653596251
 GameObject:
   m_ObjectHideFlags: 0

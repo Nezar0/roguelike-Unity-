@@ -1,6 +1,8 @@
 {
     "name": "RoomGeneration",
-    "references": [],
+    "references": [
+        "GUID:a0c8b91b65655e34c85f23d546da490c"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

@@ -13,6 +13,11 @@ TagManager:
   - Door_right
   - Wall
   - Enemy
+  - potion_green
+  - potion_red
+  - potion_yellow
+  - Key
+  - Door_close
   layers:
   - Default
   - TransparentFX
