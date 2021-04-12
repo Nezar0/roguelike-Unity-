@@ -22,7 +22,7 @@ public class RoomController : MonoBehaviour
 
     private RoomsOptions options;
     private bool spawned;
-    private bool doorOpened;
+    //private bool doorOpened;
     void Start()
     {
         options = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomsOptions>();
@@ -34,10 +34,10 @@ public class RoomController : MonoBehaviour
         {
             spawned = true;
 
-            float chance = chanceFromHealth.Evaluate(collision.GetComponent<PlayerHealth>().currentHealth);
+            float chance = chanceFromHealth.Evaluate(collision.GetComponent<PlayerHealth>().currentHealth) * 100;
             foreach (Transform spawner in enemySpawn)
             {
-                float rand = Random.Range(0, 1);
+                float rand = Random.Range(0, 100);
                 if (rand <= chance)
                 {
                     Instantiate(pot[Random.Range(0, pot.Length)], spawner.position, Quaternion.identity);
@@ -62,19 +62,20 @@ public class RoomController : MonoBehaviour
     {
         foreach(GameObject door in doors)
         {
-            if(door != null /*&& door.transform.childCount != 0*/)
+            if(door != null && door.transform.childCount != 0)
             {
                 door.GetComponent<Animator>().SetBool("isOpen", true);
             }
         }
-        doorOpened = true;
+        //doorOpened = true;
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    /*private void OnTriggerStay2D(Collider2D collision)
     {
-        if(doorOpened && collision.IsTouchingLayers(10))
+        //Debug.Log(collision.IsTouchingLayers(0));
+        if(doorOpened && collision.CompareTag("Door_left"))
         {
             collision.GetComponent<Animator>().SetBool("isOpen", true);
         }
-    }
+    }*/
 }

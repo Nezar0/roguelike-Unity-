@@ -20,10 +20,11 @@ public class Enemy : MonoBehaviour
     private float normalSpeed;
 
     private int faceRight = 1;
-
+    private RoomController enemyList;
     void Start()
     {
         normalSpeed = speed;
+        enemyList = GetComponentInParent<RoomController>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
@@ -37,6 +38,7 @@ public class Enemy : MonoBehaviour
 
         if (health <= 0)
         {
+            enemyList.enemis.Remove(gameObject);
             Destroy(gameObject);
         }
 

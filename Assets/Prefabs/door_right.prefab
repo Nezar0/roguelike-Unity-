@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5627357922759969962}
   - component: {fileID: 8735624237649559553}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Trigger
   m_TagString: Door_right
   m_Icon: {fileID: 0}
@@ -55,7 +55,8 @@ GameObject:
   - component: {fileID: 7567854830346007933}
   - component: {fileID: 7567854830346007930}
   - component: {fileID: 8521594307225373188}
-  m_Layer: 10
+  - component: {fileID: 3514592465724018065}
+  m_Layer: 0
   m_Name: door_right
   m_TagString: Door_right
   m_Icon: {fileID: 0}
@@ -153,3 +154,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.2008764}
   m_EdgeRadius: 0
+--- !u!95 &3514592465724018065
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7567854830346007932}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 72f3542c47825c14ca24617ce39ddcfd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

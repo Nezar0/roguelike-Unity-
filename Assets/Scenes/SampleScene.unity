@@ -257,6 +257,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 899587070542794881, guid: 87e4f3653e0c1534eaf50995cd0a0100,
         type: 3}
+      propertyPath: chanceFromHealth.m_Curve.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 899587070542794881, guid: 87e4f3653e0c1534eaf50995cd0a0100,
+        type: 3}
       propertyPath: doors.Array.data[0]
       value: 
       objectReference: {fileID: 982994899}
@@ -319,6 +324,101 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6691542254374442663, guid: 7e73007572c5f5e4485805718f83ef3d,
         type: 3}
+    - target: {fileID: 899587070542794881, guid: 87e4f3653e0c1534eaf50995cd0a0100,
+        type: 3}
+      propertyPath: chanceFromHealth.m_Curve.Array.data[0].value
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 899587070542794881, guid: 87e4f3653e0c1534eaf50995cd0a0100,
+        type: 3}
+      propertyPath: chanceFromHealth.m_Curve.Array.data[0].tangentMode
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 899587070542794881, guid: 87e4f3653e0c1534eaf50995cd0a0100,
+        type: 3}
+      propertyPath: chanceFromHealth.m_Curve.Array.data[1].time
+      value: 10.423488
+      objectReference: {fileID: 0}
+    - target: {fileID: 899587070542794881, guid: 87e4f3653e0c1534eaf50995cd0a0100,
+        type: 3}
+      propertyPath: chanceFromHealth.m_Curve.Array.data[1].value
+      value: 0.2009434
+      objectReference: {fileID: 0}
+    - target: {fileID: 899587070542794881, guid: 87e4f3653e0c1534eaf50995cd0a0100,
+        type: 3}
+      propertyPath: chanceFromHealth.m_Curve.Array.data[1].tangentMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 899587070542794881, guid: 87e4f3653e0c1534eaf50995cd0a0100,
+        type: 3}
+      propertyPath: chanceFromHealth.m_Curve.Array.data[0].inSlope
+      value: -0.04028519
+      objectReference: {fileID: 0}
+    - target: {fileID: 899587070542794881, guid: 87e4f3653e0c1534eaf50995cd0a0100,
+        type: 3}
+      propertyPath: chanceFromHealth.m_Curve.Array.data[0].outSlope
+      value: -0.04028519
+      objectReference: {fileID: 0}
+    - target: {fileID: 899587070542794881, guid: 87e4f3653e0c1534eaf50995cd0a0100,
+        type: 3}
+      propertyPath: chanceFromHealth.m_Curve.Array.data[0].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 899587070542794881, guid: 87e4f3653e0c1534eaf50995cd0a0100,
+        type: 3}
+      propertyPath: chanceFromHealth.m_Curve.Array.data[1].inSlope
+      value: -0.01427433
+      objectReference: {fileID: 0}
+    - target: {fileID: 899587070542794881, guid: 87e4f3653e0c1534eaf50995cd0a0100,
+        type: 3}
+      propertyPath: chanceFromHealth.m_Curve.Array.data[1].outSlope
+      value: -0.01427433
+      objectReference: {fileID: 0}
+    - target: {fileID: 899587070542794881, guid: 87e4f3653e0c1534eaf50995cd0a0100,
+        type: 3}
+      propertyPath: chanceFromHealth.m_Curve.Array.data[1].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 899587070542794881, guid: 87e4f3653e0c1534eaf50995cd0a0100,
+        type: 3}
+      propertyPath: chanceFromHealth.m_Curve.Array.data[0].time
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 899587070542794881, guid: 87e4f3653e0c1534eaf50995cd0a0100,
+        type: 3}
+      propertyPath: chanceFromHealth.m_Curve.Array.data[1].outWeight
+      value: 0.101536095
+      objectReference: {fileID: 0}
+    - target: {fileID: 899587070542794881, guid: 87e4f3653e0c1534eaf50995cd0a0100,
+        type: 3}
+      propertyPath: chanceFromHealth.m_Curve.Array.data[2].time
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 899587070542794881, guid: 87e4f3653e0c1534eaf50995cd0a0100,
+        type: 3}
+      propertyPath: chanceFromHealth.m_Curve.Array.data[2].value
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 899587070542794881, guid: 87e4f3653e0c1534eaf50995cd0a0100,
+        type: 3}
+      propertyPath: chanceFromHealth.m_Curve.Array.data[2].inSlope
+      value: -0.010540727
+      objectReference: {fileID: 0}
+    - target: {fileID: 899587070542794881, guid: 87e4f3653e0c1534eaf50995cd0a0100,
+        type: 3}
+      propertyPath: chanceFromHealth.m_Curve.Array.data[2].outSlope
+      value: -0.010540727
+      objectReference: {fileID: 0}
+    - target: {fileID: 899587070542794881, guid: 87e4f3653e0c1534eaf50995cd0a0100,
+        type: 3}
+      propertyPath: chanceFromHealth.m_Curve.Array.data[2].tangentMode
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 899587070542794881, guid: 87e4f3653e0c1534eaf50995cd0a0100,
+        type: 3}
+      propertyPath: chanceFromHealth.m_Curve.Array.data[2].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
     - target: {fileID: 1683434664811066704, guid: 87e4f3653e0c1534eaf50995cd0a0100,
         type: 3}
       propertyPath: m_Offset.x

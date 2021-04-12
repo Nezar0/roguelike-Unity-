@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 3563317722768917045}
   - component: {fileID: 3563317722768917044}
   - component: {fileID: 4700211129960300247}
-  m_Layer: 10
+  - component: {fileID: 7508582500133366053}
+  m_Layer: 0
   m_Name: door_up
   m_TagString: Door_up
   m_Icon: {fileID: 0}
@@ -109,6 +110,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.20252055}
   m_EdgeRadius: 0
+--- !u!95 &7508582500133366053
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3563317722768917046}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 72f3542c47825c14ca24617ce39ddcfd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5850872476538012795
 GameObject:
   m_ObjectHideFlags: 0
@@ -119,7 +139,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6902521636787462607}
   - component: {fileID: 1398769272333107222}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Trigger
   m_TagString: Door_up
   m_Icon: {fileID: 0}
