@@ -100,7 +100,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joystick: {fileID: 0}
   controlType: 0
-  moveSpead: 5
+  maxMoveSpeed: 0
+  currentMoveSpeed: 0
+  addSpeedTimer: {fileID: 0}
+  keyImg: {fileID: 0}
 --- !u!50 &20131927875178443
 Rigidbody2D:
   serializedVersion: 4

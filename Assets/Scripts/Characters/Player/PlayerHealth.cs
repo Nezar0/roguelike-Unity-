@@ -28,6 +28,8 @@ public class PlayerHealth : MonoBehaviour
             if(currentHealth < maxHealth)
             {
                 currentHealth += 5;
+                if (currentHealth > maxHealth)
+                    currentHealth = maxHealth;
                 healthText.text = "HP: " + currentHealth;
             }
             Destroy(collision.gameObject);
@@ -70,6 +72,7 @@ public class PlayerHealth : MonoBehaviour
     void Die()
     {
         //anim.SetInteger("anim", 5);
+        ES3.DeleteFile();
         Destroy(gameObject, 0.8f);
     }
     //анимация получения урона 

@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wall: {fileID: 7073705035160160307, guid: ebdfb1007f9641b4292e80748213c946, type: 3}
+  parent: {fileID: 0}
 --- !u!1 &7567854830346007932
 GameObject:
   m_ObjectHideFlags: 0

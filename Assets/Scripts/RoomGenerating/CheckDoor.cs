@@ -5,6 +5,7 @@ using UnityEngine;
 public class CheckDoor : MonoBehaviour
 {
     public GameObject wall;
+    public Transform parent;
 
 
     private void Start()
@@ -23,26 +24,26 @@ public class CheckDoor : MonoBehaviour
             if (transform.tag == "Door_down" && hitDown.transform.tag == "Wall")
             {
                 Destroy(transform.parent.gameObject);
-                Instantiate(wall, new Vector3(transform.position.x - 0.5f, transform.position.y + 0.45545f, transform.position.z), Quaternion.identity);
-                Instantiate(wall, new Vector3(transform.position.x + 0.5f, transform.position.y + 0.45545f, transform.position.z), Quaternion.identity);
+                Instantiate(wall, new Vector3(transform.position.x - 0.5f, transform.position.y + 0.45545f, transform.position.z), Quaternion.identity).transform.SetParent(parent.transform, true);
+                Instantiate(wall, new Vector3(transform.position.x + 0.5f, transform.position.y + 0.45545f, transform.position.z), Quaternion.identity).transform.SetParent(parent.transform, true); ;
             }
             else if (transform.tag == "Door_up" && hitUp.transform.tag == "Wall")
             {
                 Destroy(transform.parent.gameObject);
-                Instantiate(wall, new Vector3(transform.position.x - 0.5f, transform.position.y - 0.361197f, transform.position.z), Quaternion.identity);
-                Instantiate(wall, new Vector3(transform.position.x + 0.5f, transform.position.y - 0.361197f, transform.position.z), Quaternion.identity);
+                Instantiate(wall, new Vector3(transform.position.x - 0.5f, transform.position.y - 0.361197f, transform.position.z), Quaternion.identity).transform.SetParent(parent.transform, true); ;
+                Instantiate(wall, new Vector3(transform.position.x + 0.5f, transform.position.y - 0.361197f, transform.position.z), Quaternion.identity).transform.SetParent(parent.transform, true); ;
             }
             else if (transform.tag == "Door_left" && hitLeft.transform.tag == "Wall")
             {
                 Destroy(transform.parent.gameObject);
-                Instantiate(wall, new Vector3(transform.position.x + 0.365595f, transform.position.y + 0.480232f, transform.position.z), Quaternion.identity);
-                Instantiate(wall, new Vector3(transform.position.x + 0.365595f, transform.position.y - 0.480232f, transform.position.z), Quaternion.identity);
+                Instantiate(wall, new Vector3(transform.position.x + 0.365595f, transform.position.y + 0.480232f, transform.position.z), Quaternion.identity).transform.SetParent(parent.transform, true); ;
+                Instantiate(wall, new Vector3(transform.position.x + 0.365595f, transform.position.y - 0.480232f, transform.position.z), Quaternion.identity).transform.SetParent(parent.transform, true); ;
             }
             else if (transform.tag == "Door_right" && hitRight.transform.tag == "Wall")
             {
                 Destroy(transform.parent.gameObject);
-                Instantiate(wall, new Vector3(transform.position.x - 0.365595f, transform.position.y + 0.480232f, transform.position.z), Quaternion.identity);
-                Instantiate(wall, new Vector3(transform.position.x - 0.365595f, transform.position.y - 0.480232f, transform.position.z), Quaternion.identity);
+                Instantiate(wall, new Vector3(transform.position.x - 0.365595f, transform.position.y + 0.480232f, transform.position.z), Quaternion.identity).transform.SetParent(parent.transform, true); ;
+                Instantiate(wall, new Vector3(transform.position.x - 0.365595f, transform.position.y - 0.480232f, transform.position.z), Quaternion.identity).transform.SetParent(parent.transform, true); ;
             }            
         }
         catch
@@ -50,23 +51,23 @@ public class CheckDoor : MonoBehaviour
             Destroy(transform.parent.gameObject);
             if (transform.tag == "Door_up")
             {
-                Instantiate(wall, new Vector3(transform.position.x - 0.5f, transform.position.y - 0.361197f, transform.position.z), Quaternion.identity);
-                Instantiate(wall, new Vector3(transform.position.x + 0.5f, transform.position.y - 0.361197f, transform.position.z), Quaternion.identity);
+                Instantiate(wall, new Vector3(transform.position.x - 0.5f, transform.position.y - 0.361197f, transform.position.z), Quaternion.identity).transform.SetParent(parent.transform, true); ;
+                Instantiate(wall, new Vector3(transform.position.x + 0.5f, transform.position.y - 0.361197f, transform.position.z), Quaternion.identity).transform.SetParent(parent.transform, true); ;
             }
             if (transform.tag == "Door_down")
             {
-                Instantiate(wall, new Vector3(transform.position.x - 0.5f, transform.position.y + 0.45545f, transform.position.z), Quaternion.identity);
-                Instantiate(wall, new Vector3(transform.position.x + 0.5f, transform.position.y + 0.45545f, transform.position.z), Quaternion.identity);
+                Instantiate(wall, new Vector3(transform.position.x - 0.5f, transform.position.y + 0.45545f, transform.position.z), Quaternion.identity).transform.SetParent(parent.transform, true); ;
+                Instantiate(wall, new Vector3(transform.position.x + 0.5f, transform.position.y + 0.45545f, transform.position.z), Quaternion.identity).transform.SetParent(parent.transform, true); ;
             }
             if (transform.tag == "Door_left")
             {
-                Instantiate(wall, new Vector3(transform.position.x + 0.365595f, transform.position.y + 0.480232f, transform.position.z), Quaternion.identity);
-                Instantiate(wall, new Vector3(transform.position.x + 0.365595f, transform.position.y - 0.480232f, transform.position.z), Quaternion.identity);
+                Instantiate(wall, new Vector3(transform.position.x + 0.365595f, transform.position.y + 0.480232f, transform.position.z), Quaternion.identity).transform.SetParent(parent.transform, true); ;
+                Instantiate(wall, new Vector3(transform.position.x + 0.365595f, transform.position.y - 0.480232f, transform.position.z), Quaternion.identity).transform.SetParent(parent.transform, true); ;
             }
             if (transform.tag == "Door_right")
             {
-                Instantiate(wall, new Vector3(transform.position.x - 0.365595f, transform.position.y + 0.480232f, transform.position.z), Quaternion.identity);
-                Instantiate(wall, new Vector3(transform.position.x - 0.365595f, transform.position.y - 0.480232f, transform.position.z), Quaternion.identity);
+                Instantiate(wall, new Vector3(transform.position.x - 0.365595f, transform.position.y + 0.480232f, transform.position.z), Quaternion.identity).transform.SetParent(parent.transform, true); ;
+                Instantiate(wall, new Vector3(transform.position.x - 0.365595f, transform.position.y - 0.480232f, transform.position.z), Quaternion.identity).transform.SetParent(parent.transform, true); ;
             }
         }
     }

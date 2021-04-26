@@ -6,10 +6,10 @@ public class LoadingScene : MonoBehaviour
 {
     public void Loading()
     {
-        //ES3AutoSaveMgr.Current.Load();
+        ES3AutoSaveMgr.Current.Load();
     }
     public void Saveing()
     {
-        //ES3AutoSaveMgr.Current.Save();
+        ES3AutoSaveMgr.Current.Save();
     }
 }

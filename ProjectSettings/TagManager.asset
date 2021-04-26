@@ -18,6 +18,7 @@ TagManager:
   - potion_yellow
   - Key
   - Door_close
+  - boss
   layers:
   - Default
   - TransparentFX

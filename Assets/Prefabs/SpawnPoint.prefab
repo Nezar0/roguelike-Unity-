@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1170319726038428336}
   - component: {fileID: 1703285906023083439}
   - component: {fileID: -4311149209895176324}
+  - component: {fileID: -3138863505980217878}
   m_Layer: 0
   m_Name: SpawnPoint
   m_TagString: RoomPoint
@@ -67,6 +68,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dir: 0
+  spawned: 0
 --- !u!61 &-4311149209895176324
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -93,3 +95,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-3138863505980217878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071673587679838074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baff8732cd3074ef88b34f9cc487846d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabId: 5897462045622144230
+  localRefs:
+    _Keys:
+    - {fileID: 2071673587679838074}
+    - {fileID: 8714048413963580053}
+    - {fileID: 1170319726038428336}
+    - {fileID: 1703285906023083439}
+    - {fileID: 11500000, guid: dee303ff05eebf74cbfa5c9b9fa7f4a0, type: 3}
+    - {fileID: -4311149209895176324}
+    - {fileID: -3138863505980217878}
+    _Values: 0abc909bd654a34db3d500c4a37b4435bd7a24ba43b2797b65414a6995cdc824db4df196f17da7394d5206501a5d7140324103a179f42543

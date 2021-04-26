@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     public Joystick joystick;
-    public float attackTime;
+    public float attackTime = 0.3f;
     public float startTimeAttack;
     public int damage = 5;
 
@@ -49,13 +49,13 @@ public class PlayerAttack : MonoBehaviour
                 {
                     anim.SetInteger("Deg", 3);
                 }
-                attackTime = startTimeAttack;
+                //attackTime = startTimeAttack;
             }
             else
             {
                 anim.SetBool("isAttacking", false);
             }
-            attackTime = startTimeAttack;
+            //attackTime = startTimeAttack;
         }
         else
         {
@@ -72,9 +72,13 @@ public class PlayerAttack : MonoBehaviour
     public void OnAttack()
     {
         Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPosition.position, attackRange, enemies);
-        for (int i = 0; i < enemy.Length; i++)
+        if (attackTime <= 0)
         {
-            enemy[i].GetComponent<Enemy>().TakeDamage(damage);
+            for (int i = 0; i < enemy.Length; i++)
+            {
+                enemy[i].GetComponent<EnemyHealth>().TakeDamage(damage);
+                attackTime = startTimeAttack;
+            }
         }
     }
 }

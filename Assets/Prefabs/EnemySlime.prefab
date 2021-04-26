@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5624483109417620060}
   - component: {fileID: 173089528597144272}
   - component: {fileID: 7565069863761241281}
+  - component: {fileID: 8889289614741068216}
   m_Layer: 11
   m_Name: EnemySlime
   m_TagString: Enemy
@@ -135,11 +136,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14b1af5aed3c2684384734c482360c21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 20
   speed: 3
   attackTime: 0
   startTimeAttack: 2
-  damage: 5
+  damage: 2
   stopTime: 0
   startStopTime: 0.7
 --- !u!95 &173089528597144272
@@ -177,3 +177,16 @@ CircleCollider2D:
   m_Offset: {x: -0.0015473366, y: -0.011605114}
   serializedVersion: 2
   m_Radius: 0.13
+--- !u!114 &8889289614741068216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5624483109417620063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6278160b6054fcf44b8b3de4c77582c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10

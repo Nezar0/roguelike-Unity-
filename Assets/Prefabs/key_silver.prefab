@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1466767347410464786}
   - component: {fileID: 6024279624337960449}
   - component: {fileID: 4247061476511000275}
+  - component: {fileID: -5006586567858454720}
   m_Layer: 0
   m_Name: key_silver
   m_TagString: Key
@@ -98,3 +99,26 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &-5006586567858454720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3331956843385381574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baff8732cd3074ef88b34f9cc487846d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabId: 3708103393175423733
+  localRefs:
+    _Keys:
+    - {fileID: 3331956843385381574}
+    - {fileID: 1466767347410464786}
+    - {fileID: 6024279624337960449}
+    - {fileID: 21300000, guid: 17001b1a18196cf4e8d9f16a129008ca, type: 3}
+    - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+    - {fileID: 4247061476511000275}
+    - {fileID: -5006586567858454720}
+    _Values: cbf3ca6af5c6487f9e259ff06ddb273a235d6df0ac28603c4e7564282f956230723561e548122e7a0b86b2f5bd80d256e53681e479cb695e

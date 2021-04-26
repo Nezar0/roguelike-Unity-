@@ -13,6 +13,9 @@ GameObject:
   - component: {fileID: 1978522045888459906}
   - component: {fileID: 7075309109516210454}
   - component: {fileID: 247289035944021824}
+  - component: {fileID: -1629246639688011818}
+  - component: {fileID: 383747386920474249}
+  - component: {fileID: -6878608156738797165}
   m_Layer: 0
   m_Name: 'door_close '
   m_TagString: Door_close
@@ -28,7 +31,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7727311478228109411}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.06, y: 0.1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 6.25, y: 4.1039476, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -72,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: cb66a882492145541a7a1d003a1daeec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -155,3 +158,64 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-1629246639688011818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7727311478228109411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baff8732cd3074ef88b34f9cc487846d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabId: 879008603883478881
+  localRefs:
+    _Keys:
+    - {fileID: 7727311478228109411}
+    - {fileID: 7727311478228109408}
+    - {fileID: 7727311478228109409}
+    - {fileID: 21300000, guid: cb66a882492145541a7a1d003a1daeec, type: 3}
+    - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+    - {fileID: 1978522045888459906}
+    - {fileID: 7075309109516210454}
+    - {fileID: 247289035944021824}
+    - {fileID: -1629246639688011818}
+    - {fileID: 383747386920474249}
+    - {fileID: 11500000, guid: aec43a96ebd37804685deed25c1cdc7b, type: 3}
+    - {fileID: -6878608156738797165}
+    _Values: 8084bff7c05e5c10151b066a9152ba4ef6bc02a94948b2634e2ff55a6ee35d23df2ef49cf31d3a71ff8d272cf7fbf82eebb8d8c380b43d38d25ba9906802a132bee348bf47564114f773a8d770de5b4927246eb60a99a26c6d2c6e4fc7cbda01
+--- !u!114 &383747386920474249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7727311478228109411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aec43a96ebd37804685deed25c1cdc7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &-6878608156738797165
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7727311478228109411}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7

@@ -9,7 +9,6 @@ public class Enemy : MonoBehaviour
     SpriteRenderer sr;
     Transform player;
 
-    public int health;
     public float speed = 1f;
 
     public float attackTime;
@@ -36,10 +35,10 @@ public class Enemy : MonoBehaviour
     {
         rb.MovePosition(Vector2.MoveTowards(transform.position, player.position, speed * Time.fixedDeltaTime));
 
-        if (health <= 0)
+        if (GetComponent<EnemyHealth>().health <= 0)
         {
-            enemyList.enemis.Remove(gameObject);
             Destroy(gameObject);
+            enemyList.enemis.Remove(gameObject);           
         }
 
         if(stopTime <=0)
@@ -84,11 +83,5 @@ public class Enemy : MonoBehaviour
         player.GetComponent<PlayerHealth>().TakeDamage(damage);
         attackTime = startTimeAttack;
         anim.SetBool("isAttacking", false);
-    }
-
-    public void TakeDamage(int damage)
-    {
-        stopTime = startStopTime;   
-        health -= damage; 
     }
 }
