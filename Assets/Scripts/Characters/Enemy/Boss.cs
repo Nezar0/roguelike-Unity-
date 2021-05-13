@@ -17,6 +17,9 @@ public class Boss : MonoBehaviour
     public float startTimeAttack;
     public int damage;
 
+    [SerializeField]
+    private GameObject nextLevel;
+
     private int faceRight = 1;
     void Start()
     {
@@ -39,6 +42,7 @@ public class Boss : MonoBehaviour
 
         if (GetComponent<EnemyHealth>().health <= 0)
         {
+            Instantiate(nextLevel, gameObject.transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
 
@@ -73,7 +77,6 @@ public class Boss : MonoBehaviour
 
     public void OnAttack()
     {
-        player.GetComponent<PlayerHealth>().TakeDamage(damage);
         attackTime = startTimeAttack;
         anim.SetBool("isAttacking", false);
     }

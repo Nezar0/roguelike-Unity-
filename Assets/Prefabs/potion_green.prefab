@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 4233499642636638046}
   - component: {fileID: 2407245683439826628}
   - component: {fileID: 5888449035943819068}
-  - component: {fileID: -479542126630324960}
-  - component: {fileID: -4143087986285193431}
   m_Layer: 0
   m_Name: potion_green
   m_TagString: potion_green
@@ -100,41 +98,3 @@ CapsuleCollider2D:
   m_Offset: {x: -0.006294441, y: 0.009626789}
   m_Size: {x: 0.08076416, y: 0.11408763}
   m_Direction: 0
---- !u!114 &-479542126630324960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 487062520912080719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baff8732cd3074ef88b34f9cc487846d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabId: 8624890683064183720
-  localRefs:
-    _Keys:
-    - {fileID: 487062520912080719}
-    - {fileID: 4233499642636638046}
-    - {fileID: 2407245683439826628}
-    - {fileID: 21300000, guid: f53792e20b0d74345b12c14e30f49975, type: 3}
-    - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-    - {fileID: 5888449035943819068}
-    - {fileID: -479542126630324960}
-    _Values: 7a70985584b865608af06f5166da78189f502bae4aad8d0c13677bcca87f8c63b95e14f4db7ad3024ee7feb6f932942c5ea206810f063d34
---- !u!114 &-4143087986285193431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 487062520912080719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cfcc9ceea0bf419cb3bcaf548c2600d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  saveChildren: 0
-  componentsToSave:
-  - {fileID: 4233499642636638046}

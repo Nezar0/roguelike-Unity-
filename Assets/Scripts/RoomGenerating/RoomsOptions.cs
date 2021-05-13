@@ -26,20 +26,23 @@ public class RoomsOptions : MonoBehaviour
 
     private void Update()
     {
-        planes = GeometryUtility.CalculateFrustumPlanes(cam);
-        if (GeometryUtility.TestPlanesAABB(planes, boss.GetComponent<Collider2D>().bounds))
+        if (boss != null)
         {
-            boss.gameObject.SetActive(true);
-        }
-        else
-        {
-            boss.gameObject.SetActive(false);
+            planes = GeometryUtility.CalculateFrustumPlanes(cam);
+            if (GeometryUtility.TestPlanesAABB(planes, boss.GetComponent<Collider2D>().bounds))
+            {
+                boss.gameObject.SetActive(true);
+            }
+            else
+            {
+                boss.gameObject.SetActive(false);
+            }
         }
     }
 
     IEnumerator RandomSpawner()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
         RoomController lastroom = rooms[rooms.Count - 1].GetComponent<RoomController>();
         int rand = Random.Range(1, rooms.Count - 2);
 

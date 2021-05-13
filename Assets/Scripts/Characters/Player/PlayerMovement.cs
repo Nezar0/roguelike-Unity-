@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
-[RequireComponent(typeof(Animator))]
 public class PlayerMovement : MonoBehaviour
 {
     public Joystick joystick;
@@ -27,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
-        ProcessInputs();   
+        ProcessInputs();
     }
     void FixedUpdate()
     {
@@ -59,11 +57,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (moveDir.x > 0)
         {
-            this.gameObject.transform.localScale = new Vector3(6.25f, 6.25f, 1);
+            gameObject.transform.localScale = new Vector3(6.25f, 6.25f, 1);
         }
         else if (moveDir.x < 0) 
         {
-            this.gameObject.transform.localScale = new Vector3(-6.25f, 6.25f, 1);
+            gameObject.transform.localScale = new Vector3(-6.25f, 6.25f, 1);
         }
     }
 

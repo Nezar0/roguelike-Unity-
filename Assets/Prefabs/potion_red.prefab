@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 8943406632774934386}
   - component: {fileID: 237131938265636090}
   - component: {fileID: 5176097099923992804}
-  - component: {fileID: 2193777695065655927}
-  - component: {fileID: 3850627438091501393}
   m_Layer: 0
   m_Name: potion_red
   m_TagString: potion_red
@@ -100,42 +98,3 @@ CapsuleCollider2D:
   m_Offset: {x: -0.004813404, y: 0.009626769}
   m_Size: {x: 0.08076416, y: 0.11408767}
   m_Direction: 0
---- !u!114 &2193777695065655927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8892217631478576117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baff8732cd3074ef88b34f9cc487846d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabId: 852206722172494106
-  localRefs:
-    _Keys:
-    - {fileID: 8892217631478576117}
-    - {fileID: 8943406632774934386}
-    - {fileID: 237131938265636090}
-    - {fileID: 21300000, guid: 121bff0f6a048174892d4beac3b102c7, type: 3}
-    - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-    - {fileID: 5176097099923992804}
-    - {fileID: 2193777695065655927}
-    _Values: 1130fc75efe44b2823aadebf1f69790f06f2a1005407bb2dc588a5cd1727d834bf9845cbc804a61da220c3437d571116a06ba71315ab0219
---- !u!114 &3850627438091501393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8892217631478576117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cfcc9ceea0bf419cb3bcaf548c2600d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  saveChildren: 0
-  componentsToSave:
-  - {fileID: 8943406632774934386}
-  - {fileID: 2193777695065655927}

@@ -15,10 +15,12 @@ public class PlayerHealth : MonoBehaviour
     public GameObject shield;
     public Shield shieldTimer;
 
+    [SerializeField]
+    private GameObject PanelGameOver;
     void Start()
     {
         anim = GetComponent<Animator>();
-        currentHealth = maxHealth;
+        currentHealth = maxHealth;       
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -56,8 +58,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (!shield.activeInHierarchy)
         {
-            currentHealth -= damage;
-            //healthBar.SetHealth(currentHealth);
+            currentHealth -= (int)(damage * GameController.Diffculty());
             StartCoroutine(DamageAnimation());
             healthText.text = "HP: " + currentHealth;
             if (currentHealth <= 0)
@@ -68,10 +69,27 @@ public class PlayerHealth : MonoBehaviour
             }
         }
     }
-    //смерть и загрузка таблицы рекордов
     void Die()
     {
-        //anim.SetInteger("anim", 5);
+        PanelGameOver.SetActive(true);
+        PanelGameOver.GetComponent<GameOver>().textDungeonsCount.text += DungeonsComplited.Count.ToString();
+        var es3File = new ES3File("bestResult.es3");
+        if (!ES3.FileExists("bestResult.es3"))
+        {
+            es3File.Save("DungeonsComplited.Count", DungeonsComplited.Count);
+            es3File.Sync();
+        }
+        if (es3File.Load("DungeonsComplited.Count", DungeonsComplited.Count) < DungeonsComplited.Count)
+        {
+            PanelGameOver.GetComponent<GameOver>().textBestResult.text += DungeonsComplited.Count.ToString();
+            es3File.Save("DungeonsComplited.Count", DungeonsComplited.Count);
+            es3File.Sync();
+        }
+        else
+        {
+            PanelGameOver.GetComponent<GameOver>().textBestResult.text += es3File.Load("DungeonsComplited.Count", DungeonsComplited.Count);
+        }
+        //}
         ES3.DeleteFile();
         Destroy(gameObject, 0.8f);
     }

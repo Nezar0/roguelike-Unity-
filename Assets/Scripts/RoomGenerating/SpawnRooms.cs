@@ -19,17 +19,17 @@ namespace RoomGeneration
         private RoomsOptions options;
         private int rand;
         public bool spawned = false;
-        private float waitTime = 3f;
+        private float waitTime = 5f;
 
         private void Start()
         {
             options = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomsOptions>();
             Destroy(gameObject, waitTime);
-            Invoke("Spawn", 0.2f);
+            Invoke("Spawn", 0.3f);
         }
         public void Spawn()
         {
-            if (!spawned && RoomCount.Count < 10)
+            if (!spawned && RoomCount.Count < 10 * GameController.Diffculty())
             {
                 if (dir == Dir.Up)
                 {

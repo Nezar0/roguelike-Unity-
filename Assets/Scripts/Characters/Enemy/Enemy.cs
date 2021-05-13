@@ -66,9 +66,11 @@ public class Enemy : MonoBehaviour
     public void OnTriggerStay2D(Collider2D collision)
     {
         if(collision.CompareTag("Player"))
-        {
-            if(attackTime <= 0)
-            {       
+        {        
+            if (attackTime <= 0)
+            {
+                attackTime = startTimeAttack;
+                stopTime = startStopTime;
                 anim.SetBool("isAttacking", true);
             }
             else
@@ -81,7 +83,6 @@ public class Enemy : MonoBehaviour
     public void OnAttack()
     {
         player.GetComponent<PlayerHealth>().TakeDamage(damage);
-        attackTime = startTimeAttack;
         anim.SetBool("isAttacking", false);
     }
 }

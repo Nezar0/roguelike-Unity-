@@ -276,6 +276,8 @@ MonoBehaviour:
   attackTime: 0
   startTimeAttack: 2
   damage: 4
+  nextLevel: {fileID: 2993207340211778305, guid: 4e8d1f1c603a775418154363e43bdffb,
+    type: 3}
 --- !u!114 &3790603683578167028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -419,6 +421,11 @@ PrefabInstance:
     - target: {fileID: 8464241700433575111, guid: 00162755fa6b06d43a9a4ed3659b3dde,
         type: 3}
       propertyPath: m_Value
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8464241700433575111, guid: 00162755fa6b06d43a9a4ed3659b3dde,
+        type: 3}
+      propertyPath: m_MaxValue
       value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []

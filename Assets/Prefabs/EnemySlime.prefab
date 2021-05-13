@@ -137,8 +137,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  attackTime: 0
-  startTimeAttack: 2
+  attackTime: 1
+  startTimeAttack: 1
   damage: 2
   stopTime: 0
   startStopTime: 0.7

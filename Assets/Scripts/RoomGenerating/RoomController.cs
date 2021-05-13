@@ -39,7 +39,7 @@ public class RoomController : MonoBehaviour
         {
             spawned = true;
             float chance = chanceFromHealth.Evaluate(collision.GetComponent<PlayerHealth>().currentHealth) * 100;
-            if(enemySpawn.Length != 0)
+            if(enemySpawn.Length != 0 || enemySpawn != null)
             foreach (Transform spawner in enemySpawn)
             {
                 float rand = Random.Range(0, 100);
