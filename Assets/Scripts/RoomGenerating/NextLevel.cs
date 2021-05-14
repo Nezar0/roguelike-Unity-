@@ -14,8 +14,8 @@ public class NextLevel : MonoBehaviour
         }
         else
         {
-            ES3.Save("DungeonsComplited.Count", DungeonsComplited.Count);
             DungeonsComplited.Count++;
+            ES3.Save("DungeonsComplited.Count", DungeonsComplited.Count);
             SceneManager.LoadScene("SafeLocation");
         }
     }

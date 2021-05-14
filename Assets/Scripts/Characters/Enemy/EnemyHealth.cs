@@ -5,10 +5,12 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     public int health;
+    public int maxHealth;
     private float _health;
 
     private void Start()
     {
+        maxHealth = health;
         health = (int)(health * GameController.Diffculty()); ;
     }
 

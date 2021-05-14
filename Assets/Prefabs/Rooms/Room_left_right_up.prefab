@@ -7198,6 +7198,7 @@ MonoBehaviour:
     type: 3}
   enemyTypes:
   - {fileID: 5624483109417620063, guid: b1ccd392fe3b2884a8d0b2fcdcf79845, type: 3}
+  - {fileID: 2249467655379314833, guid: 922c458e0b1b68c438b0302b0aa44d48, type: 3}
   enemySpawn:
   - {fileID: 794142996960110443}
   - {fileID: 3487635600513324778}

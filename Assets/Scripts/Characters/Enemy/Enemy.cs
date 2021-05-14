@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
     SpriteRenderer sr;
     Transform player;
 
+    public HealthBar healthBar;
+
     public float speed = 1f;
 
     public float attackTime;
@@ -22,6 +24,7 @@ public class Enemy : MonoBehaviour
     private RoomController enemyList;
     void Start()
     {
+        healthBar.SetHealth(GetComponent<EnemyHealth>().health, GetComponent<EnemyHealth>().maxHealth);
         normalSpeed = speed;
         enemyList = GetComponentInParent<RoomController>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -61,6 +64,7 @@ public class Enemy : MonoBehaviour
             faceRight *= -1;
             sr.flipX = false;
         }
+        healthBar.SetHealth(GetComponent<EnemyHealth>().health, GetComponent<EnemyHealth>().maxHealth);
     }
 
     public void OnTriggerStay2D(Collider2D collision)

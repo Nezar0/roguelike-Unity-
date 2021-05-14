@@ -72,6 +72,10 @@ public class PlayerHealth : MonoBehaviour
     void Die()
     {
         PanelGameOver.SetActive(true);
+        if (ES3.FileExists())
+        {
+            DungeonsComplited.Count = ES3.Load("DungeonsComplited.Count", DungeonsComplited.Count);
+        }
         PanelGameOver.GetComponent<GameOver>().textDungeonsCount.text += DungeonsComplited.Count.ToString();
         var es3File = new ES3File("bestResult.es3");
         if (!ES3.FileExists("bestResult.es3"))
