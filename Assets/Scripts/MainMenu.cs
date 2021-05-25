@@ -8,6 +8,8 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField]
     private Button btnContinue;
+    [SerializeField]
+    private GameObject panelConfTutorial;
     private void Start()
     {
         if(!ES3.FileExists())
@@ -16,8 +18,17 @@ public class MainMenu : MonoBehaviour
         }
     }
     public void OnPlayNewGame()
-    {        
+    {
+        panelConfTutorial.SetActive(true);       
+    }
+
+    public void OnPlayNewGameWithNotTutorial()
+    {
         SceneManager.LoadScene("SafeLocation");
+    }
+    public void OnPlayNewGameWithTutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
     }
     public void OnPlayGame()
     {
