@@ -10,7 +10,6 @@ public class RoomsOptions : MonoBehaviour
     public GameObject[] rightRooms;
 
     public GameObject key;
-    public GameObject chest;
     public GameObject boss;
 
     [HideInInspector] public List<GameObject> rooms;

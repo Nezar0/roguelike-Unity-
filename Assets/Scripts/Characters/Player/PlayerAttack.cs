@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
@@ -62,6 +60,7 @@ public class PlayerAttack : MonoBehaviour
             attackTime -= Time.deltaTime;
             anim.SetBool("isAttacking", false);           
         }
+
     }
     private void OnDrawGizmosSelected()
     {

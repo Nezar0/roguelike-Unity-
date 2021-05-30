@@ -1007,7 +1007,7 @@ PrefabInstance:
     - target: {fileID: 8170153791668043268, guid: 0d230cc8be529a542a08cb878ab14b18,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8170153791668043268, guid: 0d230cc8be529a542a08cb878ab14b18,
         type: 3}
@@ -3507,7 +3507,7 @@ PrefabInstance:
     - target: {fileID: 4936917379922712191, guid: 06c6402e0482f324d9ee8a2965d9b10a,
         type: 3}
       propertyPath: controlType
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8725937908512797356, guid: 06c6402e0482f324d9ee8a2965d9b10a,
         type: 3}

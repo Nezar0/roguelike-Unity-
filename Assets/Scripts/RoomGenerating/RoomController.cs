@@ -22,7 +22,6 @@ public class RoomController : MonoBehaviour
 
     private RoomsOptions options;
     private bool spawned;
-    //private bool doorOpened;
     private void Awake()
     {
         options = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomsOptions>();
@@ -81,15 +80,5 @@ public class RoomController : MonoBehaviour
                 door.GetComponent<Animator>().SetBool("isOpen", true);
             }
         }
-        //doorOpened = true;
     }
-
-    /*private void OnTriggerStay2D(Collider2D collision)
-    {
-        //Debug.Log(collision.IsTouchingLayers(0));
-        if(doorOpened && collision.CompareTag("Door_left"))
-        {
-            collision.GetComponent<Animator>().SetBool("isOpen", true);
-        }
-    }*/
 }

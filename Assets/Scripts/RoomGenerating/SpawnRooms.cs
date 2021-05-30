@@ -1,13 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace RoomGeneration
 {
     public class SpawnRooms : MonoBehaviour
     {
         public Dir dir;
-        public enum Dir
+        public enum Dir 
         {
             Up,
             Dowm,
